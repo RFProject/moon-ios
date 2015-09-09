@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0205081E1B9BC95A00577F24 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0205081D1B9BC95A00577F24 /* AVFoundation.framework */; };
 		029AFD061B9B2C980074C170 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029AFD051B9B2C980074C170 /* AppDelegate.swift */; };
 		029AFD081B9B2C980074C170 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029AFD071B9B2C980074C170 /* ViewController.swift */; };
 		029AFD0B1B9B2C980074C170 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 029AFD091B9B2C980074C170 /* Main.storyboard */; };
 		029AFD0D1B9B2C980074C170 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 029AFD0C1B9B2C980074C170 /* Images.xcassets */; };
 		029AFD101B9B2C980074C170 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 029AFD0E1B9B2C980074C170 /* LaunchScreen.xib */; };
 		029AFD1C1B9B2C980074C170 /* moonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029AFD1B1B9B2C980074C170 /* moonTests.swift */; };
+		AA50BE3A90DA47BA501F6C4C /* Pods_moon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074A025C423735570135443C /* Pods_moon.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0205081D1B9BC95A00577F24 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		029AFD001B9B2C980074C170 /* moon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		029AFD041B9B2C980074C170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		029AFD051B9B2C980074C170 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,9 @@
 		029AFD151B9B2C980074C170 /* moonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		029AFD1A1B9B2C980074C170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		029AFD1B1B9B2C980074C170 /* moonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moonTests.swift; sourceTree = "<group>"; };
+		074A025C423735570135443C /* Pods_moon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_moon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3073540C022AC45375399A49 /* Pods-moon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moon.release.xcconfig"; path = "Pods/Target Support Files/Pods-moon/Pods-moon.release.xcconfig"; sourceTree = "<group>"; };
+		AC3E0CDA37213966534DFAB4 /* Pods-moon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-moon/Pods-moon.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0205081E1B9BC95A00577F24 /* AVFoundation.framework in Frameworks */,
+				AA50BE3A90DA47BA501F6C4C /* Pods_moon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +67,12 @@
 		029AFCF71B9B2C980074C170 = {
 			isa = PBXGroup;
 			children = (
+				0205081D1B9BC95A00577F24 /* AVFoundation.framework */,
 				029AFD021B9B2C980074C170 /* moon */,
 				029AFD181B9B2C980074C170 /* moonTests */,
 				029AFD011B9B2C980074C170 /* Products */,
+				3314A5C11272BBF53FCED1F8 /* Pods */,
+				875DD211C7261CEE4ED23487 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +123,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3314A5C11272BBF53FCED1F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC3E0CDA37213966534DFAB4 /* Pods-moon.debug.xcconfig */,
+				3073540C022AC45375399A49 /* Pods-moon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		875DD211C7261CEE4ED23487 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				074A025C423735570135443C /* Pods_moon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +147,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 029AFD1F1B9B2C980074C170 /* Build configuration list for PBXNativeTarget "moon" */;
 			buildPhases = (
+				4C5E3837D86960672F60E29B /* Check Pods Manifest.lock */,
 				029AFCFC1B9B2C980074C170 /* Sources */,
 				029AFCFD1B9B2C980074C170 /* Frameworks */,
 				029AFCFE1B9B2C980074C170 /* Resources */,
+				A11218FD905B45C0A5B31DBB /* Embed Pods Frameworks */,
+				1054007C40A58A7D805ED35E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,6 +187,8 @@
 		029AFCF81B9B2C980074C170 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = RFP;
 				TargetAttributes = {
@@ -206,6 +239,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1054007C40A58A7D805ED35E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-moon/Pods-moon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C5E3837D86960672F60E29B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A11218FD905B45C0A5B31DBB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-moon/Pods-moon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		029AFCFC1B9B2C980074C170 /* Sources */ = {
@@ -328,12 +409,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		029AFD201B9B2C980074C170 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC3E0CDA37213966534DFAB4 /* Pods-moon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = moon/Info.plist;
@@ -344,6 +427,7 @@
 		};
 		029AFD211B9B2C980074C170 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3073540C022AC45375399A49 /* Pods-moon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = moon/Info.plist;
@@ -405,6 +489,7 @@
 				029AFD211B9B2C980074C170 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		029AFD221B9B2C980074C170 /* Build configuration list for PBXNativeTarget "moonTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +498,7 @@
 				029AFD241B9B2C980074C170 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
